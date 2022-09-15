@@ -16,7 +16,7 @@ st.set_page_config(
     }
 )
 
-image = Image.open('/home/dajana/Dropbox/Photos/DSC_5378.jpg')
+image = Image.open('./images/DSC_5378.jpg')
 
 col1, col2 = st.columns(2)
 

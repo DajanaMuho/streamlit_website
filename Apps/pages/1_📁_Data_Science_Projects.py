@@ -20,9 +20,9 @@ selected_project = st.sidebar.radio(
 
 if selected_project == 'Machine Learning':
     st.header("# [ROBO-CHAT](https://github.com/DajanaMuho/Robo-Chat)")
-    neural_model_img = Image.open('/home/dajana/Dropbox/CUNY/Machine Learning/Project/Robo-Chat/graph.png')
-    cos_img = Image.open('/home/dajana/Dropbox/CUNY/Machine Learning/Project/Robo-Chat/cosine.png')
-    video_file = open('/home/dajana/Dropbox/CUNY/Machine Learning/Project/Robo-Chat/video_screen_area.mp4', 'rb')
+    neural_model_img = Image.open('./images/graph.png')
+    cos_img = Image.open('./images/cosine.png')
+    video_file = open('./images/video_screen_area.mp4', 'rb')
     video_bytes = video_file.read()
 
     st.video(video_bytes, "video/mp4", 14)
@@ -75,25 +75,24 @@ if selected_project == 'Storage, Retrieval, and Processing of Big Data':
         * _Full stack management system to visualize the driver behavior_.
         """
     )
-    video_file = open('/home/dajana/Dropbox/WMU/Classes/Big Data/Project Demo.mp4', 'rb')
+    video_file = open('./images/Project Demo.mp4', 'rb')
     st.video(video_file.read(), "video/mp4", 80)
 
     col1, col2 = st.columns(2)
     with col1:
-        architecture = Image.open(
-            "/home/dajana/Dropbox/WMU/Classes/Big Data/Project/Insurance Management System.png")
+        architecture = Image.open("./images/Insurance Management System.png")
         st.image(architecture, width=250, use_column_width=True)
     with col2:
-        ml = Image.open("/home/dajana/Dropbox/WMU/Classes/Big Data/Project/ml.png")
+        ml = Image.open("./images/ml.png")
         st.image(ml, width=250, use_column_width=True)
 
 
 if selected_project == 'Big Data Analysis Using Python':
     st.header("# [Sentiment Analysis on the tweets about distance learning](https://github.com/DajanaMuho/Sentiment-Analysis)")
     st.write("**Build a machine learning model to predict the positivity and the negativity of the tweets, to help the education system identify the best learning approach.**")
-    pos = '/home/dajana/Dropbox/WMU/Classes/Big Data Analysis Using Python/Project/positive.png'
-    neg = '/home/dajana/Dropbox/WMU/Classes/Big Data Analysis Using Python/Project/negative.png'
-    country = '/home/dajana/Dropbox/WMU/Classes/Big Data Analysis Using Python/Project/country.png'
+    pos = './images/positive.png'
+    neg = './images/negative.png'
+    country = './images/country.png'
 
     col1, col2 = st.columns(2)
     with col1:
@@ -154,9 +153,9 @@ if selected_project == 'Big Data Analysis Using Python':
 
 if selected_project == 'Data Visualization':
     st.header("# [U.S Immigration Trends](https://github.com/DajanaMuho/Data-Visualization)")
-    world_mape_img = Image.open('/home/dajana/Dropbox/CUNY/Data Visualization/Project/Graph_1_World_Map.png')
-    line_graph = '/home/dajana/Dropbox/CUNY/Data Visualization/Project/Graph_2_Line_Trend.gif'
-    dream_gif = '/home/dajana/Dropbox/CUNY/Data Visualization/Project/Graph_3_Pie_Vide.mp4'
+    world_mape_img = Image.open('./images/Graph_1_World_Map.png')
+    line_graph = './images/Graph_2_Line_Trend.gif'
+    dream_gif = './images/Graph_3_Pie_Vide.mp4'
 
     st.image(world_mape_img, use_column_width=True)
 
@@ -188,9 +187,9 @@ if selected_project == 'Data Mining':
         * To improve the efficiency of healthcare services. 
     """
     )
-    workflow ="/home/dajana/Dropbox/CUNY/Machine Learning/HW/workflow.png"
-    data = "/home/dajana/Dropbox/CUNY/Machine Learning/HW/data.png"
-    text = "/home/dajana/Dropbox/CUNY/Machine Learning/HW/text.png"
+    workflow ="./images/workflow.png"
+    data = "./images/data.png"
+    text = "./images/text.png"
 
     st.image(workflow, use_column_width=True)
     col1, col2 = st.columns(2)
